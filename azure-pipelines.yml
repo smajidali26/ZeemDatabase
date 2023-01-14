@@ -12,7 +12,7 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: dotnet build
+- script: dotnet restore
   displayName: 'Build Database Project'
   workingDirectory: $(solutionDir)
 

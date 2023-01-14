@@ -16,3 +16,6 @@ steps:
   displayName: 'Build Database Project'
   workingDirectory: $(solutionDir)
 
+- task: VSBuild@1
+  inputs:
+    solution: '**\*.sln'

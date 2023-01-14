@@ -6,12 +6,13 @@
 trigger:
 - develop
 
+variables: 
+  solutionDir: 'Zeem'
 pool:
   vmImage: windows-latest
 
 steps:
-- script:  pwd
-  displayName: ''
-- script: dotnet build Zeem/Zeem.sln
+- script: dotnet build
   displayName: 'Build Database Project'
+  workingDirectory: $(soltionDir)
 

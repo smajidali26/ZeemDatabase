@@ -16,4 +16,3 @@ steps:
   displayName: 'Build Database Project'
   workingDirectory: $(solutionDir)
 
-

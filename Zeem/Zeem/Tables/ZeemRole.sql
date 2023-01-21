@@ -2,6 +2,7 @@
 (
 	[ZeemRoleId]                                    INT NOT NULL PRIMARY KEY IDENTITY, 
     [RoleName]                                      NVARCHAR(50) NOT NULL,
+    [SelfRegistrationRole]                          BIT NOT NULL DEFAULT 0,
 	[CreatedDate]                                   DATETIME NOT NULL DEFAULT GETDATE(), 
     [CreatedBy]                                     INT NOT NULL, 
     [ModifiedDate]                                  DATETIME NULL, 

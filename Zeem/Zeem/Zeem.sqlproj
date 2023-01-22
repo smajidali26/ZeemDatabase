@@ -70,7 +70,9 @@
     <RefactorLog Include="Zeem.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Zeem.publish.xml" />
+    <None Include="Zeem.publish.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PreDeploy Include="Script\Script.PreDeployment.sql" />

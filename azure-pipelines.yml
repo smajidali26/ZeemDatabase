@@ -22,3 +22,9 @@ steps:
     solution: '**/*.sln'
     msbuildArchitecture: 'x64'
     configuration: 'release'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+    CleanTargetFolder: true

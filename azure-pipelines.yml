@@ -30,8 +30,8 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(agent.builddirectory)'
-    Contents: '**/bin/release'
+    SourceFolder: '$(solutionDir)'
+    Contents: '**/Zeem/bin/release'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
   

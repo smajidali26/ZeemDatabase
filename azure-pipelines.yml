@@ -7,7 +7,7 @@ trigger:
 - develop
 
 variables: 
-  solutionDir: 'Zeem\Zeem\'
+  solutionDir: 'Zeem\'
 pool:
   vmImage: windows-latest
 

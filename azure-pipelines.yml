@@ -16,3 +16,9 @@ steps:
   displayName: 'Build Database Project'
   workingDirectory: $(solutionDir)
 
+
+- task: MSBuild@1
+  inputs:
+    solution: '**/*.sln'
+    msbuildArchitecture: 'x64'
+    configuration: 'release'

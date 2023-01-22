@@ -7,7 +7,6 @@
     [MobileNumber]                                  NVARCHAR(50) NOT NULL, 
     [Username]                                      NVARCHAR(50) NOT NULL, 
     [Password]                                      NVARCHAR(200) NOT NULL, 
-    [PasswordSalt]                                  NVARCHAR(50) NOT NULL, 
     [EmailVerified]                                 BIT NOT NULL DEFAULT 0, 
     [MobileNumberVerified]                          BIT NOT NULL DEFAULT 0, 
     [IsLocked]                                      BIT NOT NULL DEFAULT 0, 

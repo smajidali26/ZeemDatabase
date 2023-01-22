@@ -17,11 +17,16 @@ steps:
   workingDirectory: $(solutionDir)
 
 
+
 - task: MSBuild@1
   inputs:
     solution: '**/*.sln'
     msbuildArchitecture: 'x64'
     configuration: 'release'
+
+- script: dir
+  displayName: '1Build Database Project'
+  workingDirectory: $(agent.builddirectory)
 
 - task: CopyFiles@2
   inputs:
@@ -29,3 +34,6 @@ steps:
     Contents: '**/bin/release'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     CleanTargetFolder: true
+  
+
+  
